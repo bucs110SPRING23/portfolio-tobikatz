@@ -1,5 +1,4 @@
 import pygame
-
 pygame.init()
 
 # gets the display and makes it full screen
