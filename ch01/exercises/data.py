@@ -8,4 +8,4 @@ print (10 % 15)
 print (10 % 10)
 print (0 % 10)
 print (10 / 15)
-# this last value is mathematically incorrect. there should be seven 6's and then a 7. I think this is because it will not round, but just give the long list of numbers. 
+# this last value is mathematically incorrect. its an infinite number, but it truncates it bc there are not enough bytes to store it all
