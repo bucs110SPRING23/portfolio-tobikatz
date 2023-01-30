@@ -1,0 +1,11 @@
+print (10 *5)
+print (10 ** 2)
+print (15 / 10)
+print (15 // 10)
+print (-15 // 10)
+print (15 % 10)
+print (10 % 15)
+print (10 % 10)
+print (0 % 10)
+print (10 / 15)
+# this last value is mathematically incorrect. there should be seven 6's and then a 7

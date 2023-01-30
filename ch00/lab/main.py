@@ -19,11 +19,20 @@ pygame.time.wait(500)
 
 screen.fill([0, 0, 255])
 
-font = pygame.font.SysFont(None, 72)
-text = font.render("Hello Tobi", True, "yellow")
+# font = pygame.font.SysFont(None, 72)
+# text = font.render("Hello Tobi", True, "yellow")
 
-screen.blit(text, screen.get_rect().center)
+# screen.blit(text, screen.get_rect().center)
 
 pygame.display.flip()
 
 pygame.time.wait(2000)
+# # waint until user quits
+# running = True
+# while running:
+#     for event in pygame.event.get():
+#         if event.type == pygame.QUIT:
+#             running = False
+
+# pygame.quit()
+# 
