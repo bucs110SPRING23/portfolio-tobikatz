@@ -3,7 +3,7 @@ pygame.init()
 
 # gets the display and makes it full screen
 # no arguments means full screen
-screen = pygame.display.set_mode()
+screen = pygame.display.set_mode((250,300))
 
 # RGB Scheme
 # [R, G, B]=> [0-255, 0-255, 0-255]
@@ -19,10 +19,10 @@ pygame.time.wait(500)
 
 screen.fill([0, 0, 255])
 
-# font = pygame.font.SysFont(None, 72)
-# text = font.render("Hello Tobi", True, "yellow")
+font = pygame.font.SysFont(None, 72)
+text = font.render("Hello Tobi", True, "yellow")
 
-# screen.blit(text, screen.get_rect().center)
+screen.blit(text, screen.get_rect().center)
 
 pygame.display.flip()
 
