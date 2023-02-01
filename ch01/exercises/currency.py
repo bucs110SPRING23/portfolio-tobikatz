@@ -4,4 +4,5 @@ amount = input("How much do you want to exchange?")
 rate = float(rate)
 amount = float(amount)
 total = rate * amount
-result = print(total-3)
+result = total - 3 
+print("Here is your money and a $3 tax for my service:", result)
