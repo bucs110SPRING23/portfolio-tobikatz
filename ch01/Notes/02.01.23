@@ -1,0 +1,68 @@
+# var = input("choose a number")
+# print (var, type(var))
+# var = int(var)
+#  #this is casting the variable var's input as an integer, and not as the default string! 
+# print (var, type(var))
+# print (var + 1) 
+# we can now do math with this variable... 
+
+# data = int(input("enter a number")) 
+# # this does the same thing as above, but just less lines... however it doesn't make it any better
+# print (data, type(data))
+
+# we can convert any data type into another data type by casting, but not at the same time as above... bc its already an int!
+# print(str(var) + "is a number")
+
+# var = 4
+# var = float(var)
+# print (type(var))
+
+# import math
+# print(math.pi)
+
+# import random
+# my_list = [1,2,3,4,5,6]
+# var = random.choice(my_list)
+# print(var)
+
+
+
+# import turtle
+# pen = turtle.Turtle()
+# pen2 = turtle.Turtle()
+# pen3 = turtle.Turtle()
+# pen4 = turtle.Turtle()
+# pen5 =turtle.Turtle()
+# pen5.shape("turtle")
+# pen5.color("green")
+# pen5.speed(5)
+#  #Turtle creates a pen!!
+# window = turtle.Screen()
+#  #screen will allow us to keep something up for longer
+# #variable = module.function
+# pen.backward(200)
+# pen2.forward(200)
+# pen3.right(200)
+# pen3.forward(200)
+# pen4.left(200)
+# pen4.forward(200)
+# #100 means 100 units
+# window.exitonclick()
+# #must be last commmand on this one thing 
+# # up and down functions picks up and puts down the pen without drawing a line
+# pen2.home()
+# #makes it go to the origin
+# pen.goto(0,0)
+# # does the same thing as home
+
+
+import turtle
+pen = turtle.Turtle()
+window = turtle.Screen()
+pen.shape("turtle")
+pen.forward(200)
+pen.up()
+pen.left(90)
+pen.down()
+pen.forward(200)
+window.exitonclick()
