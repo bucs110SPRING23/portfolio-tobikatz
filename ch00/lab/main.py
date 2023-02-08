@@ -21,7 +21,7 @@ screen.fill([0, 0, 255])
 
 font = pygame.font.SysFont(None, 72)
 text = font.render("Hello Tobi", True, "yellow")
-
+# var = input()
 screen.blit(text, screen.get_rect().center)
 
 pygame.display.flip()
@@ -34,5 +34,5 @@ pygame.time.wait(2000)
 #         if event.type == pygame.QUIT:
 #             running = False
 
-# pygame.quit()
+pygame.quit()
 # 

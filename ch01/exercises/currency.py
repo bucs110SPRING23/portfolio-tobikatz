@@ -6,3 +6,4 @@ amount = float(amount)
 total = rate * amount
 result = total - 3 
 print("Here is your money and a $3 tax for my service:", result)
+
