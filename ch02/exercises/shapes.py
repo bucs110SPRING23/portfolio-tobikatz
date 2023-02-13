@@ -7,5 +7,6 @@ pygame.draw.circle(screen,"red",[75,75],80)
 pygame.display.flip()
 pygame.draw.circle(screen,"green",[60,60],60)
 pygame.display.flip()
+pygame.time.wait(3000)
 
 
