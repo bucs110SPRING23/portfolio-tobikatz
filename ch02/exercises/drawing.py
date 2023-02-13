@@ -12,4 +12,7 @@ pen.color("blue")
 for i in long:
     pen.forward(i)
     pen.left(angle)
+
+
+
 window.exitonclick()
