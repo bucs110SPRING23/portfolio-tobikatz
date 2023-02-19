@@ -2,6 +2,10 @@
 # Race 2
 import turtle
 import random 
+import pygame
+import math
+pygame.init()
+
 screen = turtle.Screen()
 player1 = turtle.Turtle()
 player1.color("pink")
@@ -38,4 +42,31 @@ player1.down()
 player2.down()
 
 screen.exitonclick()
+
+# Part B
+window = pygame.display.set_mode()
+window.fill("pink")
+listofshapes =[3,4,6,20,100,360]
+points = []
+side_length = 200
+xpos = 600
+ypos = 600
+for i in range(6):
+    num_sides = listofshapes[i]
+    for i in range(num_sides):
+        angle = 360/num_sides
+        radians = math.radians(angle * i)
+        x = xpos + side_length * math.cos(radians)
+        y = xpos + side_length *math.sin(radians)
+        coordinate = (x,y)
+        points.append(coordinate)
+
+    print(points)
+    pygame.draw.polygon(window,"blue",points)
+    pygame.display.flip()
+
+    pygame.time.delay(1500)
+
+    window.fill("pink")
+    points = []
 
