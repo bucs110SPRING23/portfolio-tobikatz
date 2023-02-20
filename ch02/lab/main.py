@@ -48,7 +48,7 @@ window = pygame.display.set_mode()
 window.fill("pink")
 listofshapes =[3,4,6,20,100,360]
 points = []
-side_length = 200
+side_length = 350
 xpos = 600
 ypos = 600
 for i in range(6):
@@ -61,7 +61,6 @@ for i in range(6):
         coordinate = (x,y)
         points.append(coordinate)
 
-    print(points)
     pygame.draw.polygon(window,"blue",points)
     pygame.display.flip()
 
