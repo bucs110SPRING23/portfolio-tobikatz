@@ -2,8 +2,9 @@
 import random
 x = random.randrange(0,1000)
 amountoftries = []
-
-for guesses in range(1000):
+guess =  1001
+# for guesses in range(1000):
+while guess != x:
     guess =  int(input("Whats the number?"))
     amountoftries.append(guess)
     if guess < x:
