@@ -86,26 +86,14 @@ font = pygame.font.Font(None, 48)
 if len(playergreen) > len(playerpink):
     if results == "green":
         text = font.render("Green player won, correct!", True, "black")
-        screen.blit(text, (x,y))
-        pygame.display.flip()
     else:
-        font = pygame.font.Font(None, 48)
         text = font.render("Green player won, incorrect!", True, "black")
-        screen.blit(text, (x,y))
-        pygame.display.flip()
 elif len(playergreen) < len(playerpink):
     if results == "pink":
-        font = pygame.font.Font(None, 48)
         text = font.render("Pink player won, correct!", True, "black")
-        screen.blit(text, (x,y))
-        pygame.display.flip()
     else:
-        font = pygame.font.Font(None, 48)
         text = font.render("Pink player won, incorrect!", True, "black")
-        screen.blit(text, (x,y))
-        pygame.display.flip()
 else:
-    font = pygame.font.Font(None, 48)
     text = font.render("Tie Game!", True, "black")
 
 screen.blit(text, (x,y))
