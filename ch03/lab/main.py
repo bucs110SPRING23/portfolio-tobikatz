@@ -1,12 +1,12 @@
 import pygame
-<<<<<<< HEAD
+
 pygame.init()
 screen = pygame.display.set_mode()
 x = pygame.display.get_window_size() [0]/2
 y = pygame.display.get_window_size() [1]/2
 screen.fill("aquamarine1")
 pygame.draw.circle(screen, "gold1",[x,y], 600)
-=======
+
 import random 
 import math
 pygame.init()
@@ -40,4 +40,4 @@ for _ in range(11):
 
 
 pygame.time.wait(5000)
->>>>>>> 3ed3fe3bca15db791bae9166ba6f3b6fd2892bc9
+

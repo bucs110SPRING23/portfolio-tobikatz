@@ -7,7 +7,7 @@ player1.shape("turtle")
 player1.color("green")
 size = turtle.screensize()
 
-while player1.pos() < size:
+while player1.pos() < size: #why is this not working!!!!
     movement = random.randint(1,100)
     if movement <= 50:
         player1.left(90)
@@ -17,3 +17,4 @@ while player1.pos() < size:
         player1.right(90)
         player1.forward(100)
         player1.pos()
+    

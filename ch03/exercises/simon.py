@@ -29,13 +29,13 @@ response = input(message)
 user_sequence = [] # to make sure they are hitting the correct buttons 
 for event in pygame.event.get():
 # we need to decide what the event type is
-    if event.type == pygame.KEYDOWN:
-    	if event.key == pygame.K_UP:
-			screen.fill("red")
+	if event.type == pygame.KEYDOWN:
+		if event.key == pygame.K_UP:
+		    screen.fill("red")
 			user_sequence.append("red")
 		if event.key == pygame.K_D:
             screen.fill("blue")
-			user_sequence.append("blue")
+		    user_sequence.append("blue")
         if event.key == pygame.K_LEFT:
             screen.fill("green")
 			user_sequence.append("green")

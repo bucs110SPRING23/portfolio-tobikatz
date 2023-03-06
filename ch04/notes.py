@@ -80,21 +80,33 @@ print(contact["jane"])
 #key/value pairs
 #keys must be UNIQUE and IMMUTABLE (they are generally just strings)
 
-contact["joe"] = "987-0987"
-print(contact)
-#we cant add two of the same key, it will just update the existing key!
-for c in contact:
-    print(c) #this prints out the key 
-    print(contact[c]) #prints the value also 
-for key, value in contact.items(): #this is enumerate for a dictionary!
-    print(key) 
-    print(value) 
+# contact["joe"] = "987-0987"
+# print(contact)
+# #we cant add two of the same key, it will just update the existing key!
+# for c in contact:
+#     print(c) #this prints out the key 
+#     print(contact[c]) #prints the value also 
+# for key, value in contact.items(): #this is enumerate for a dictionary!
+#     print(key) 
+#     print(value) 
 
-for key in contact.keys(): #this is enumerate for a dictionary!
-    print(key) 
+# for key in contact.keys(): #this is enumerate for a dictionary!
+#     print(key) 
     
-#we can use get() for reading something
+# #we can use get() for reading something
 
-print(contact.get("juan")) #if it is not there it will say that its not there, allows us to safely check the dictionary
+# print(contact.get("juan")) #if it is not there it will say that its not there, allows us to safely check the dictionary
 
-#data structures: stings, lists, tuples, and dictionaries
+# #data structures: stings, lists, tuples, and dictionaries
+import pygame 
+
+hitboxes = {
+    "pink" : pygame.Rect(0,0,50,50),
+    "green" : pygame.Rect(0,0,50,50)
+}
+hitboxes["pink"].topleft = hitboxes["green"].topright
+colors = {
+    "pink" : (255,105,180),
+    "green" : (34,139,34)
+}
+pygame.display.flip()  
