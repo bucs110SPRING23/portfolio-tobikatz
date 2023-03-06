@@ -10,7 +10,7 @@ screen.fill("aquamarine1")
 pygame.draw.circle(screen, "gold1",[x,y], 750)
 
 pygame.init()
-screen = pygame.display.set_mode((1000,1000))
+screen = pygame.display.set_mode()
 screensize = pygame.display.get_window_size()
 x = screensize [0]/2
 y = screensize[1]/2
@@ -56,7 +56,7 @@ for _ in range(11):
         dartx = random.randrange(screensize [0])
         darty = random.randrange(screensize [1])
         distance_from_center = math.hypot(x-dartx,y-darty)
-        is_in_circle = distance_from_center <= x
+        is_in_circle = distance_from_center <= y
         if i == 0:
             if is_in_circle: 
                 dart = pygame.draw.circle(screen, "springgreen4", [dartx,darty], 15)
