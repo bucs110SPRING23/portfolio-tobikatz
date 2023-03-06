@@ -15,12 +15,12 @@
 # myvendingmachine()
 
 ##determine maximum value
-def findmax():
-    max = a
-    if b > max:
-        max = b
-    if c > max:
-        max = c
+def findmax(x,y,z):
+    max = x
+    if y > max:
+        max = y
+    if z > max:
+        max = z
     print(max)
 
 print("Please enter 3 numbers: ")
@@ -28,5 +28,5 @@ a = int(input(": "))
 b = int(input(": "))
 c = int(input(": "))    
 
-findmax()
+findmax(a,b,c)
     
