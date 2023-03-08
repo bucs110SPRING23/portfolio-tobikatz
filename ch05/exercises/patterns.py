@@ -14,9 +14,9 @@ star_pyramid(rows)
 # Part B
 def rstar_pyramid(y):
     star ="*"
-    for i in range(x):
-        print(star * (x))
-        x = x-1
+    for i in range(y):
+        print(star * (y))
+        y = y-1
 
 
 
