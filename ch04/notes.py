@@ -97,16 +97,17 @@ print(contact["jane"])
 
 # print(contact.get("juan")) #if it is not there it will say that its not there, allows us to safely check the dictionary
 
-# #data structures: stings, lists, tuples, and dictionaries
-import pygame 
+# # #data structures: stings, lists, tuples, and dictionaries
+# import pygame 
 
-hitboxes = {
-    "pink" : pygame.Rect(0,0,50,50),
-    "green" : pygame.Rect(0,0,50,50)
-}
-hitboxes["pink"].topleft = hitboxes["green"].topright
-colors = {
-    "pink" : (255,105,180),
-    "green" : (34,139,34)
-}
-pygame.display.flip()  
+# hitboxes = {
+#     "pink" : pygame.Rect(0,0,50,50),
+#     "green" : pygame.Rect(0,0,50,50)
+# }
+# hitboxes["pink"].topleft = hitboxes["green"].topright
+# colors = {
+#     "pink" : (255,105,180),
+#     "green" : (34,139,34)
+# }
+# pygame.display.flip()  
+
