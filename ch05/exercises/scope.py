@@ -16,6 +16,6 @@ def square(num1):
 def main():
     print (multiply(3,2))
     print(exponent(4,2))
-    print(square(13))
+    print(square(356))
 
 main()
