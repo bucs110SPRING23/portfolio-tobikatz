@@ -23,13 +23,13 @@ def graph (threennplus1_dictionary):
     coords = points.items()
     print(coords)
     pygame.init()
-    screen = pygame.display.set_mode()
+    screen = pygame.display.set_mode((500,500))
     pygame.draw.lines(screen, "orange", True, list(coords))
     pygame.display.flip()
-    new_screen = pygame.transform.flip(screen,False,True)
+    new_screen = pygame.transform.flip(screen, False,True)
     width, height = new_screen.get_size()
-    new_screen = pygame.transform.scale(new_screen, (width*5, height*5))
-    screen.blit(new_screen,(width/2, height/2))
+    new_screen = pygame.transform.scale(new_screen,(width*5, height*5))
+    new_screen.blit(new_screen,(0,0))
     pygame.display.flip()
     pygame.time.wait(1000)
 
@@ -40,17 +40,18 @@ def graph (threennplus1_dictionary):
         else:
            current_max != value
     print(current_max)
-    font = pygame.font.Font(None,15)
-    text = font.render(current_max, True, "green")
+    font = pygame.font.Font(None,100)
+    text = font.render(str(current_max), True, "green")
     pos = (10,10)
     screen.blit(text,pos)
     pygame.display.flip()
+    pygame.time.wait(1000)
 
     return coords
 
 
 def main():
-   value = 98
+   value = 6000
    print (threenp1(value))
    print (threenp1range(value))
    graph(threenp1(value))

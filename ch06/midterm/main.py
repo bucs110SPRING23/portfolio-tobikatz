@@ -35,11 +35,13 @@ def deathly_hallows (side_length = 120):
     pen.forward(wand)
     
     screen.exitonclick()
-    return triangle 
+
+    local_vars_dict = {"triangle": triangle, "angle": angle, "wand": wand, "radius": radius }
+    return local_vars_dict 
 
 
 def main():
-   deathly_hallows(193)
+   print(deathly_hallows(193))
 
 
 main ()
