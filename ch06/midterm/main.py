@@ -4,9 +4,9 @@ import math
 
 def deathly_hallows (side_length = 120):
     '''
-   general function description: This function creates a screen and draws three shapes to create the harry potter deathly hallows symbol (a triangle, circle, and line)
+   general function description: This function creates a screen and draws three shapes to create the harry potter deathly hallows symbol (a triangle, circle, and line inscribed in one another.)
    args: this function takes the argument of side_length, which allows for adjustments of the size of the shapes. 
-   return: this function returns the amount of sides of the original shape i.e. the triangle
+   return: this function returns every variable used in this function and it's value from a library containing all of the variables.
    '''
     # this sets up the screen
     screen = turtle.Screen()
@@ -37,11 +37,12 @@ def deathly_hallows (side_length = 120):
     screen.exitonclick()
 
     local_vars_dict = {"triangle": triangle, "angle": angle, "wand": wand, "radius": radius }
+
     return local_vars_dict 
 
 
 def main():
-   print(deathly_hallows(193))
+   print(deathly_hallows(79))
 
 
 main ()
