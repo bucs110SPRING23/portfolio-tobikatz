@@ -8,4 +8,7 @@ class Surface:
     def __init__(self,filename, x,y,h,w):
         self.image = filename 
         self.rect = pygame.Rect(abs(x), abs(y), abs(w),abs(h)) 
+    
+    def getRect(self):
+        return self.rect
         
