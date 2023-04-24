@@ -56,6 +56,11 @@ class StringUtility:
             self.asciiCounter += ord(i)
         return self.asciiCounter
     def cipher(self):
+        """
+        take self.string as an arguement
+        returns self.result which is the encyrpted string
+          based on the number of letters of the word
+        """
         self.result = ""
         for i in self.string:
             if i.isalpha():
