@@ -16,7 +16,7 @@ class Cat:
         print(self.cresponse)
     def __str__(self):
         """
-        this method returns the internal string unchanged. 
+        this method returns the URL and JSON dictionary format of the URL. 
         it has the args self and returns the JSON dictionary
         """
-        return self.c
+        return f'Cat({self.catUrl},{self.cresponse})'
